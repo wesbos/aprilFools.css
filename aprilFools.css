@@ -89,7 +89,24 @@ html {
   /*-webkit-animation: rainbow 8s infinite;*/
 }
 
+/*
+  Make every website fall over!
+*/
+/*
+html, body {
+  height: 100%;
+}
 
+html {
+  -webkit-perspective: 1000;
+}
+
+body {
+  -webkit-transform-origin: bottom center;
+  -webkit-transform: rotateX(-90deg);
+  -webkit-animation: fall 1.5s ease-in;
+}
+*/
 
 /* Animations */
 
@@ -110,3 +127,7 @@ html {
   100% { -webkit-filter: hue-rotate(360deg); }
 }
 
+@-webkit-keyframes fall {
+  0%   { -webkit-transform: none; }
+  100%   { -webkit-transform: rotateX(-90deg); }
+}
