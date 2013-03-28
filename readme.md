@@ -46,4 +46,4 @@ Ubuntu (Chromium): `~/.config/chromium/Default/User StyleSheets/Custom.css`
 ![](http://wes.io/Nti1/content)
 
 
-### Any many more in aprilFools.css
+### And many more in aprilFools.css
