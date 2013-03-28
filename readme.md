@@ -5,3 +5,45 @@ Mac: `~/Library/Application Support/Google/Chrome/Default/User StyleSheets/Custo
 PC: `C:/Users/YourUsername/AppData/Local/Google/Chrome/User Data/Default/User StyleSheets/Custom.css`
 
 Ubuntu (Chromium): `~/.config/chromium/Default/User StyleSheets/Custom.css`
+
+
+
+
+	/*
+	  Turn every website upside down
+	*/
+	body {
+	  -webkit-transform: rotate(180deg);
+	}
+
+![](http://wes.io/NuBm/content)
+
+	/*
+	  blur every website for a split second every 30 seconds
+	*/
+	body {
+	  /*-webkit-animation: blur 30s infinite;*/
+	}
+
+![](http://wes.io/Ntu2/content)
+
+	/*
+	  Spin every Website
+	*/ 
+	body {
+	  /*-webkit-animation: spin 5s linear infinite;*/
+	}
+
+![](http://wes.io/Ntsb/content)
+
+	/*
+	  Flip all images upside down
+	*/
+	img {
+	  /*-webkit-transform: rotate(180deg);*/
+	}
+
+![](http://wes.io/Nti1/content)
+
+
+### Any many more in aprilFools.css
