@@ -103,9 +103,19 @@ p:nth-child(2) {
 #-webkit-web-inspector .console-formatted-null,
 #-webkit-web-inspector .console-formatted-undefined,
 #-webkit-web-inspector .console-error-level .console-message-text,
-#-webkit-web-inspector .console-error-level .section .header .title {
+#-webkit-web-inspector .console-error-level .section .header .title,
+#-webkit-web-inspector .console-group-messages .section .header .title,
+#-webkit-web-inspector .console-formatted-object,
+#-webkit-web-inspector .console-formatted-node,
+#-webkit-web-inspector .console-formatted-array,
+#-webkit-web-inspector .section .properties .name,
+#-webkit-web-inspector .event-properties .name,
+#-webkit-web-inspector .console-formatted-object .name,
+#-webkit-web-inspector .console-formatted-number,
+#-webkit-web-inspector .console-formatted-string {
   /*color: transparent !important;*/
 }
+
 
 /* HTML PRIDE! */
 html {
