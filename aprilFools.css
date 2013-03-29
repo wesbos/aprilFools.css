@@ -84,6 +84,29 @@ p:nth-child(2) {
   /*display:none !important;*/
 }
 
+/* Make console text all blurry */
+#-webkit-web-inspector .console-group-messages {
+  /*text-shadow: 0 0 3px rgba(0,0,0,.5) !important;*/
+}
+
+#-webkit-web-inspector .console-error-level .console-message-text,
+#-webkit-web-inspector .console-error-level .section .header .title {
+  /*text-shadow: 0 0 3px rgba(255,0,0,.5) !important;*/
+}
+
+#-webkit-web-inspector .console-user-command > .console-message-text {
+  /*text-shadow: 0 0 3px rgba(0,128,255,.5) !important;*/
+}
+
+#-webkit-web-inspector .console-group-messages,
+#-webkit-web-inspector .console-user-command > .console-message-text,
+#-webkit-web-inspector .console-formatted-null,
+#-webkit-web-inspector .console-formatted-undefined,
+#-webkit-web-inspector .console-error-level .console-message-text,
+#-webkit-web-inspector .console-error-level .section .header .title {
+  /*color: transparent !important;*/
+}
+
 /* HTML PRIDE! */
 html {
   /*-webkit-animation: rainbow 8s infinite;*/
