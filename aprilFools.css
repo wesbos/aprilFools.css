@@ -102,6 +102,7 @@ p:nth-child(2) {
 #-webkit-web-inspector .console-user-command > .console-message-text,
 #-webkit-web-inspector .console-formatted-null,
 #-webkit-web-inspector .console-formatted-undefined,
+#-webkit-web-inspector .console-debug-level .console-message-text,
 #-webkit-web-inspector .console-error-level .console-message-text,
 #-webkit-web-inspector .console-error-level .section .header .title,
 #-webkit-web-inspector .console-group-messages .section .header .title,
@@ -112,10 +113,10 @@ p:nth-child(2) {
 #-webkit-web-inspector .event-properties .name,
 #-webkit-web-inspector .console-formatted-object .name,
 #-webkit-web-inspector .console-formatted-number,
-#-webkit-web-inspector .console-formatted-string {
+#-webkit-web-inspector .console-formatted-string,
+#-webkit-web-inspector #console-messages a {
   /*color: transparent !important;*/
 }
-
 
 /* HTML PRIDE! */
 html {
