@@ -64,7 +64,6 @@ img {
 p:nth-child(2) {
   /*display:none !important;*/
 }
-
 /*
   Spin dev tools round and round
 */
@@ -108,6 +107,31 @@ body {
 }
 */
 
+/*
+	Slowly growing text
+*/
+/*
+p{
+	-webkit-animation: grow 120s ease-in;
+}
+*/
+
+/*
+	Infinite cursor load
+*/
+/*
+* { cursor:wait; }
+*/
+
+/*
+	Insert a phrase every paragraph
+*/
+/*
+p:before {
+   content: "YOLO ";
+}
+*/
+
 /* Animations */
 
 @-webkit-keyframes blur {
@@ -130,4 +154,9 @@ body {
 @-webkit-keyframes fall {
   0%   { -webkit-transform: none; }
   100%   { -webkit-transform: rotateX(-90deg); }
+}
+
+@-webkit-keyframes grow {
+  0%   { font-size: none; }
+  100%   { font-size: 80pt; }
 }
