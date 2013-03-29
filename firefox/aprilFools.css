@@ -61,6 +61,11 @@ p:before {
    /*content: "YOLO ";*/
 }
 
+/* Breaking bad-esque links */
+a:after {
+  /*content: ", BITCH!";*/
+}
+
 
 /* Animations */
 @keyframes spin {
