@@ -142,6 +142,15 @@ body {
 }
 */
 
+/*
+	Insert a phrase every paragraph
+*/
+/*
+p:before {
+   content: "YOLO ";
+}
+*/
+
 /* Animations */
 
 @-webkit-keyframes blur {
