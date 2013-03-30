@@ -80,6 +80,15 @@ html {
 }
 
 /*
+  slowly grow text
+*/
+p {
+  -webkit-animation: grow 120s ease-in;
+  -moz-animation: grow 120s ease-in;
+  animation: grow 120s ease-in;
+}
+
+/*
   Spin dev tools round and round
 */
 #-webkit-web-inspector {
@@ -210,3 +219,16 @@ p:before {
   100%   { transform: rotateX(-90deg); }
 }
 
+
+@-webkit-keyframes grow {
+  0%   { font-size: none; }
+  100%   { font-size: 80pt; }
+}
+@-moz-keyframes grow {
+  0%   { font-size: none; }
+  100%   { font-size: 80pt; }
+}
+@keyframes grow {
+  0%   { font-size: none; }
+  100%   { font-size: 80pt; }
+}
