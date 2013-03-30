@@ -2,17 +2,13 @@
 
 _by Wes Bos_ [<img src="http://wes.io/Ntgi/content">](http://twitter.com/wesbos)
 
-Put these CSS definitions into your co-workers Custom.css file.  They will be applied to every website they visit as well as their developer tools. They are commented out by default, so make sure to uncomment your favourite ones! 
+Put these CSS definitions into your co-workers css overriding file.  They will be applied to every website they visit. They are commented out by default, so make sure to uncomment your favourite ones! 
 
-Mac: `~/Library/Application Support/Google/Chrome/Default/User StyleSheets/Custom.css` (s/Chrome/Chrome Canary/ if they use the yellow icon Canary version)
-
-PC: `C:/Users/YourUsername/AppData/Local/Google/Chrome/User Data/Default/User StyleSheets/Custom.css`
-
-Ubuntu (Chromium): `~/.config/chromium/Default/User StyleSheets/Custom.css`
-
+The instructions on where to find the css file (you might have to create it) are in the browser's folder.
 
 	/*
-	  Turn every website upside down
+	  Turn every website upside down.
+	  Available: Chrome, Firefox
 	*/
 	body {
 	  -webkit-transform: rotate(180deg);
@@ -22,6 +18,7 @@ Ubuntu (Chromium): `~/.config/chromium/Default/User StyleSheets/Custom.css`
 
 	/*
 	  blur every website for a split second every 30 seconds
+	  Available: Chrome
 	*/
 	body {
 	  /*-webkit-animation: blur 30s infinite;*/
@@ -31,6 +28,7 @@ Ubuntu (Chromium): `~/.config/chromium/Default/User StyleSheets/Custom.css`
 
 	/*
 	  Spin every Website
+	  Available: Chrome, Firefox
 	*/ 
 	body {
 	  /*-webkit-animation: spin 5s linear infinite;*/
@@ -40,6 +38,7 @@ Ubuntu (Chromium): `~/.config/chromium/Default/User StyleSheets/Custom.css`
 
 	/*
 	  Flip all images upside down
+	  Available: Chrome, Firefox
 	*/
 	img {
 	  /*-webkit-transform: rotate(180deg);*/
@@ -48,4 +47,4 @@ Ubuntu (Chromium): `~/.config/chromium/Default/User StyleSheets/Custom.css`
 ![](http://wes.io/Nti1/content)
 
 
-## See them all in [aprilFools.css](https://github.com/wesbos/aprilFools.css/blob/master/aprilFools.css)
+## See them all in your browser's aprilFools.css.
