@@ -4,13 +4,8 @@
   I assume no responsibility for angry co-workers or lost productivity 
 
   Put these CSS definitons into your co-workers Custom.css file.
+  
   They will be applied to every website they visit as well as their developer tools.
-
-  Mac: ~/Library/Application Support/Google/Chrome/Default/User StyleSheets/Custom.css
-
-  Windows: C:/Users/YourUsername/AppData/Local/Google/Chrome/User Data/Default/User StyleSheets/Custom.css
-
-  Linux (Chromium): ~/.config/chromium/Default/User StyleSheets/Custom.css
   
 */
 
@@ -19,7 +14,8 @@
   Turn every website upside down
 */
 body {
-  /*-webkit-transform: rotate(180deg);*/
+  /*-webkit-transform: rotate(180deg);
+  transform: rotate(180deg);*/
 }
 
 /*
@@ -33,14 +29,16 @@ body {
   Spin every Website
 */ 
 body {
-  /*-webkit-animation: spin 5s linear infinite;*/
+  /*-webkit-animation: spin 5s linear infinite;
+    animation: spin 5s linear infinite;*/
 }
 
 /*
   Flip all images upside down
 */
 img {
-  /*-webkit-transform: rotate(180deg);*/
+  /*-webkit-transform: rotate(180deg);
+  transform: rotate(180deg);*/
 }
 
 /*
@@ -55,7 +53,8 @@ body, p, body p, body div p {
   Spin all images
 */ 
 img {
-  /*-webkit-animation: spin 1s linear infinite;*/
+  /*-webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;*/
 }
 
 /*
@@ -133,6 +132,7 @@ html, body {
 
 html {
   -webkit-perspective: 1000;
+  perspective: 1000;
 }
 
 body {
@@ -174,3 +174,24 @@ p:before {
   0%   { -webkit-transform: none; }
   100%   { -webkit-transform: rotateX(-90deg); }
 }
+
+@keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100%   { transform: rotate(360deg); }
+}
+
+@keyframes fall {
+  0%   { transform: none; }
+  100%   { transform: rotateX(-90deg); }
+}
+
+@-moz-keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100%   { transform: rotate(360deg); }
+}
+
+@-moz-keyframes fall {
+  0%   { transform: none; }
+  100%   { transform: rotateX(-90deg); }
+}
+

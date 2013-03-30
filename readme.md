@@ -4,7 +4,15 @@ _by Wes Bos_ [<img src="http://wes.io/Ntgi/content">](http://twitter.com/wesbos)
 
 Put these CSS definitions into your co-workers css overriding file.  They will be applied to every website they visit. They are commented out by default, so make sure to uncomment your favourite ones! 
 
-The instructions on where to find the css file (you might have to create it) are in the browser's folder.
+Most will work in both firefox and chrome. The `-webkit` only ones are specific to chrome or dev tools features. Please feel free to add more via PR.
+
+**Mac Chrome**: `~/Library/Application Support/Google/Chrome/Default/User StyleSheets/Custom.css`
+
+**Windows Chrome**: `C:/Users/YourUsername/AppData/Local/Google/Chrome/User Data/Default/User StyleSheets/Custom.css`
+
+**Linux (Chromium)**: `~/.config/chromium/Default/User StyleSheets/Custom.css`
+
+**Firefox** - Windows, Mac & Linux: `YOUR_FIREFOX_PROFILE/chrome/userContent.css`
 
 	/*
 	  Turn every website upside down.
@@ -47,4 +55,4 @@ The instructions on where to find the css file (you might have to create it) are
 ![](http://wes.io/Nti1/content)
 
 
-## See them all in your browser's aprilFools.css.
+## See them all in your [aprilFools.css](https://github.com/wesbos/aprilFools.css/blob/master/aprilFools.css)
