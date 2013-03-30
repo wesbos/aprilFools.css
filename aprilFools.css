@@ -64,6 +64,21 @@ p:nth-child(2) {
   /*display:none !important;*/
 }
 
+
+/*
+  Permanent cursor wait
+*/ 
+html {
+  /*cursor:wait !important; */
+}
+
+/*
+  hide the cursor all together
+*/
+html {
+  /*cursor:none !important;*/
+}
+
 /*
   Spin dev tools round and round
 */
