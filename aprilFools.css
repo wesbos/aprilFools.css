@@ -1,12 +1,13 @@
 ﻿/*
   aprilFools.css
   Written by Wes Bos
+  Modified by Nick Karamoff
+
   I assume no responsibility for angry co-workers or lost productivity 
 
   Put these CSS definitons into your co-workers Custom.css file.
   
   They will be applied to every website they visit as well as their developer tools.
-  
 */
 
 
@@ -14,31 +15,31 @@
   Turn every website upside down
 */
 body {
-  /*-webkit-transform: rotate(180deg);
-  transform: rotate(180deg);*/
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 /*
   blur every website for a split second every 30 seconds
 */
 body {
-  /*-webkit-animation: blur 30s infinite;*/
+  -webkit-animation: blur 30s infinite;
 }
 
 /*
   Spin every Website
 */ 
 body {
-  /*-webkit-animation: spin 5s linear infinite;
-    animation: spin 5s linear infinite;*/
+  -webkit-animation: spin 5s linear infinite;
+  animation: spin 5s linear infinite;
 }
 
 /*
   Flip all images upside down
 */
 img {
-  /*-webkit-transform: rotate(180deg);
-  transform: rotate(180deg);*/
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 /*
@@ -46,37 +47,36 @@ img {
 */
 
 body, p, body p, body div p {
-  /*font-family: 'Comic Sans MS', cursive !important;*/
+  font-family: 'Comic Sans MS', cursive !important;
 }
 
 /*
   Spin all images
 */ 
 img {
-  /*-webkit-animation: spin 1s linear infinite;
-  animation: spin 1s linear infinite;*/
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
 }
 
 /*
   Hide every 2nd paragraph element on a page
 */
 p:nth-child(2) {
-  /*display:none !important;*/
+  display:none !important;
 }
-
 
 /*
   Permanent cursor wait
 */ 
 html {
-  /*cursor:wait !important; */
+  cursor:wait !important; 
 }
 
 /*
   hide the cursor all together
 */
 html {
-  /*cursor:none !important;*/
+  cursor:none !important;
 }
 
 /*
@@ -88,37 +88,43 @@ p {
   animation: grow 120s ease-in;
 }
 
+
+/* Dev Tools */                                     
+
 /*
   Spin dev tools round and round
 */
 #-webkit-web-inspector {
- /*-webkit-animation: spin 1s linear infinite; */
+ -webkit-animation: spin 1s linear infinite; 
 }
+
 
 /*
   Flip dev tools upside down
 */ 
 #-webkit-web-inspector {
- /*-webkit-transform:rotate(180deg);*/
+ -webkit-transform:rotate(180deg);
 }
+
 
 /* Hide the close button */
 #-webkit-web-inspector .toolbar-item.close-left {
-  /*display:none !important;*/
+  display:none !important;
 }
+
 
 /* Make console text all blurry */
 #-webkit-web-inspector .console-group-messages {
-  /*text-shadow: 0 0 3px rgba(0,0,0,.5) !important;*/
+  text-shadow: 0 0 3px rgba(0,0,0,.5) !important;
 }
 
 #-webkit-web-inspector .console-error-level .console-message-text,
 #-webkit-web-inspector .console-error-level .section .header .title {
-  /*text-shadow: 0 0 3px rgba(255,0,0,.5) !important;*/
+  text-shadow: 0 0 3px rgba(255,0,0,.5) !important;
 }
 
 #-webkit-web-inspector .console-user-command > .console-message-text {
-  /*text-shadow: 0 0 3px rgba(0,128,255,.5) !important;*/
+  text-shadow: 0 0 3px rgba(0,128,255,.5) !important;
 }
 
 #-webkit-web-inspector .console-group-messages,
@@ -138,18 +144,19 @@ p {
 #-webkit-web-inspector .console-formatted-number,
 #-webkit-web-inspector .console-formatted-string,
 #-webkit-web-inspector #console-messages a {
-  /*color: transparent !important;*/
+  color: transparent !important;
 }
+
 
 /* HTML PRIDE! */
 html {
-  /*-webkit-animation: rainbow 8s infinite;*/
+  -webkit-animation: rainbow 8s infinite;
 }
+
 
 /*
   Make every website fall over!
 */
-/*
 html, body {
   height: 100%;
 }
@@ -164,18 +171,98 @@ body {
   -webkit-transform: rotateX(-90deg);
   -webkit-animation: fall 1.5s ease-in;
 }
-*/
+
 
 /*
 	Insert a phrase every paragraph
 */
-/*
 p:before {
    content: "YOLO ";
 }
+
+
+/* New tricks by Nick Karamoff */
+
+/*
+  Flip every paragraph upside down
 */
+p {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+
+/*
+  Flip every header upside down
+*/
+h1, h2, h3, h4, h5, h6 {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+
+/*
+  Mirror the whole webpage
+*/
+body {
+  -webkit-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+/*
+  Transparent paragraphs
+*/
+p {
+  color: transparent;
+}
+
+/*
+  "Very good design" combo (blue bg, red text, Comic Sans)
+*/
+body, p, h1, h2, h3, h4, h5, h6 {
+  color: red;
+  background-color: blue;
+  font-family: "Comic Sans", cursive;
+}
+
+/*
+  Deactivate all the links
+*/
+a {
+  pointer-events: none;
+  cursor: default;
+}
+
+/* 
+  Unlinkify links (standart formatting, but still clickable)
+*/
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: default;
+}
+
+/*
+  Links not allowed
+*/
+a {
+  cursor: not-allowed;
+}
+
+/*
+  Everything's a link!
+*/
+body {
+  cursor: pointer;
+}
+
+
 
 /* Animations */
+
+/*
+  Everything that is moving is powered from here, so just copy this whole chunk
+*/
 
 @-webkit-keyframes blur {
   0%   { -webkit-filter: blur(0px); }
