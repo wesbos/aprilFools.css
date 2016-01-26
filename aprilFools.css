@@ -15,7 +15,6 @@
   Turn every website upside down
 */
 body {
-  -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
@@ -23,14 +22,13 @@ body {
   blur every website for a split second every 30 seconds
 */
 body {
-  -webkit-animation: blur 30s infinite;
+  animation: blur 30s infinite;
 }
 
 /*
   Spin every Website
 */ 
 body {
-  -webkit-animation: spin 5s linear infinite;
   animation: spin 5s linear infinite;
 }
 
@@ -38,7 +36,6 @@ body {
   Flip all images upside down
 */
 img {
-  -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
@@ -54,7 +51,6 @@ body, p, body p, body div p {
   Spin all images
 */ 
 img {
-  -webkit-animation: spin 1s linear infinite;
   animation: spin 1s linear infinite;
 }
 
@@ -83,8 +79,6 @@ html {
   slowly grow text
 */
 p {
-  -webkit-animation: grow 120s ease-in;
-  -moz-animation: grow 120s ease-in;
   animation: grow 120s ease-in;
 }
 
@@ -150,7 +144,7 @@ p {
 
 /* HTML PRIDE! */
 html {
-  -webkit-animation: rainbow 8s infinite;
+  animation: rainbow 8s infinite;
 }
 
 
@@ -162,14 +156,13 @@ html, body {
 }
 
 html {
-  -webkit-perspective: 1000;
   perspective: 1000;
 }
 
 body {
-  -webkit-transform-origin: bottom center;
-  -webkit-transform: rotateX(-90deg);
-  -webkit-animation: fall 1.5s ease-in;
+  transform-origin: bottom center;
+  transform: rotateX(-90deg);
+  animation: fall 1.5s ease-in;
 }
 
 
@@ -187,7 +180,6 @@ p:before {
   Flip every paragraph upside down
 */
 p {
-  -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
@@ -196,7 +188,6 @@ p {
   Flip every header upside down
 */
 h1, h2, h3, h4, h5, h6 {
-  -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
@@ -205,7 +196,6 @@ h1, h2, h3, h4, h5, h6 {
   Mirror the whole webpage
 */
 body {
-  -webkit-transform: scale(-1, 1);
   transform: scale(-1, 1);
 }
 
@@ -264,12 +254,12 @@ body {
   Everything that is moving is powered from here, so just copy this whole chunk
 */
 
-@-webkit-keyframes blur {
-  0%   { -webkit-filter: blur(0px); }
-  49%   { -webkit-filter: blur(0px); }
-  50%   { -webkit-filter: blur(1px); }
-  51%   { -webkit-filter: blur(0px); }
-  100%   { -webkit-filter: blur(0px); }
+@keyframes blur {
+  0%   { filter: blur(0px); }
+  49%   { filter: blur(0px); }
+  50%   { filter: blur(1px); }
+  51%   { filter: blur(0px); }
+  100%   { -wfilter: blur(0px); }
 }
 
 @-webkit-keyframes spin {
@@ -277,13 +267,8 @@ body {
   100%   { -webkit-transform: rotate(360deg); }
 }
 
-@-webkit-keyframes rainbow {
-  100% { -webkit-filter: hue-rotate(360deg); }
-}
-
-@-webkit-keyframes fall {
-  0%   { -webkit-transform: none; }
-  100%   { -webkit-transform: rotateX(-90deg); }
+@keyframes rainbow {
+  100% { filter: hue-rotate(360deg); }
 }
 
 @keyframes spin {
@@ -296,25 +281,6 @@ body {
   100%   { transform: rotateX(-90deg); }
 }
 
-@-moz-keyframes spin {
-  0%   { transform: rotate(0deg); }
-  100%   { transform: rotate(360deg); }
-}
-
-@-moz-keyframes fall {
-  0%   { transform: none; }
-  100%   { transform: rotateX(-90deg); }
-}
-
-
-@-webkit-keyframes grow {
-  0%   { font-size: none; }
-  100%   { font-size: 80pt; }
-}
-@-moz-keyframes grow {
-  0%   { font-size: none; }
-  100%   { font-size: 80pt; }
-}
 @keyframes grow {
   0%   { font-size: none; }
   100%   { font-size: 80pt; }
