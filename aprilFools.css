@@ -259,7 +259,7 @@ body {
   49%   { filter: blur(0px); }
   50%   { filter: blur(1px); }
   51%   { filter: blur(0px); }
-  100%   { -wfilter: blur(0px); }
+  100%   { filter: blur(0px); }
 }
 
 @-webkit-keyframes spin {
